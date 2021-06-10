@@ -1,0 +1,32 @@
+
+.credit{
+    width: 93vw;
+    padding: 20px 50px;
+    background-color: rgb(240, 239, 239);
+    margin: 0 auto;
+   
+    flex-direction: column;
+  
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+.credit div{
+    margin: 15px;
+}
+
+.halykImg{
+    width: 600px;
+}
+.halykWrapper {
+    padding: 20px;
+    display: flex;
+    font-family: 'Raleway', serif;
+    text-shadow: 1px 1px 1px #aaa;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Montserrat';
+  }
+
+
+

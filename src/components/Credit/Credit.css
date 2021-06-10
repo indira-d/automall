@@ -1,0 +1,99 @@
+.creditField{
+    padding: 10px;
+    width: 200px;
+    margin: 10px auto;
+    border: 2px solid black;
+   
+    
+}
+.selectField{
+
+    width: 220px;
+    margin: 10px auto;
+    border: 2px solid black;
+    outline: none;
+    padding: 1px 3px;
+
+
+}
+
+.creditWrapper{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-shadow: 0px 0px 1px #aaa;
+   
+}
+
+.creditBtn{
+    width: 120px;
+    padding: 12px 15px;
+    border: 2px solid black;
+    background: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    margin: 5px auto;
+}
+
+.creditBtn:hover{
+    color: white;
+    background: black;
+}
+
+.creditDescription{
+    width: 50%;
+   
+    padding: 30px;
+    border: 2px solid white;
+    
+}
+
+.creditInput{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color: rgb(77, 75, 75);
+    outline: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    padding: 5px;
+    
+}
+input, select{
+    font-size: 16px;
+    outline: none;
+}
+
+.calculations{
+    margin: 15px auto;
+  
+    
+    padding: 10px 30px;
+    border: 3px solid rgb(228, 223, 223);
+   
+   
+}
+
+.activeOption:hover{
+    background: rgb(231, 228, 228);
+}
+
+.payment{
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+   
+}
+
+.creditDescription div{
+    margin: 15px;
+   
+}

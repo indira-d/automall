@@ -1,0 +1,36 @@
+.contactsInfo{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+     justify-content: space-between;
+    margin-left: 50px;
+
+  
+}
+
+.contactsItem{
+    display: flex;
+    padding: 5px;
+   
+    
+}
+.contactsItem div{
+    margin-right: 10px;
+}
+
+
+
+.workHours{
+    width: 700px;
+}
+
+/* .workHours div{
+    margin: 5px;
+} */
+
+.text{
+   
+    display: flex;
+    font-size: 16px;
+   
+}

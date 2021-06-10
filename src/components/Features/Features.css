@@ -1,0 +1,36 @@
+.featuresContainer{
+    height: 230px;
+    display: flex;
+    /* background: linear-gradient(rgb(29, 29, 29), rgba(63, 63, 63, 0.927)); */
+    padding: 50px 30px;
+    color: white;
+    margin: 50px 0;
+
+    /* //background: linear-gradient(90deg, rgba(2,0,36,1) 23%, rgba(33,27,136,1) 100%, rgba(0,18,255,1) 100%); */
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.38); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.38);
+     font-family: 'Montserrat', serif;
+    font-weight: 700;
+    background: rgba(2,0,36,0.9) 23%;
+    
+   
+}
+
+.fIcons{
+    display: flex;
+    margin: 10px auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.featuresDescription{
+  
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.featuresItem{
+    width: 25%;
+
+}

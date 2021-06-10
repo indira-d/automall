@@ -1,0 +1,74 @@
+.pImg{
+    width: 250px;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.popularImg{
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.popularImg img{
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+
+ .popularItem:hover img{
+    transform: scale(1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+
+ 
+
+
+
+
+
+.popularContainer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.popularItem{
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.38); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.38);
+}
+
+.popularDiscription{
+    background-color: rgba(24, 23, 23, 0.947);
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+   
+}
+
+.pText{
+    border-radius: 5px;
+  
+    
+}
+
+.text{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
