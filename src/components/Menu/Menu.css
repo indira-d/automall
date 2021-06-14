@@ -47,18 +47,22 @@
     vertical-align: bottom;
    }
 
-.menuItem:hover{
-    background: linear-gradient(rgba(76, 128, 240, 0.836), white);
 
+   .menuItem:hover{
+    background: #333;
     margin: 5px;
-    border-radius: 5px;
+    color: #fff;
     height: 35px;
     border: none;
     outline: none;
     padding: 5px;
     justify-content: center;
     font-weight: 700;
-    font-size:15px;
+    font-size: 15px;
+    background: linear-gradient(to right,#fff 50%, #333 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
 }
 
 .menuModels{
