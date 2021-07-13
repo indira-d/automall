@@ -76,9 +76,9 @@ export default class Catalogue extends Component {
                                 </div>
                                 <div className='carText'>
                                     <h4>{car.model}</h4>
-                                    <div className='carPrice' style={{textAlign: 'center', margin: '7px'}}> {car.price}</div>
+                                    <div className='carPrice' style={{textAlign: 'left', margin: '5px 5px 5px 0px'}}> От {car.price} сомов</div>
                                     {/* <div className='carDescription'>год выпуска: {car.year}  г.в.</div>
-                                    <div className='carDescription'> объем двигателя: {car.description}</div> */}
+                                    <div className='carDescription'> объем двигателя: {car.description}</div>  */}
                                 </div>
                         </div>
                     </Link>

@@ -12,20 +12,22 @@ class CarouselComponent extends Component {
         return (
             <Carousel autoPlay={true} interval={3000} showThumbs={false}
             stopOnHover={false} transitionTime={0.5} dynamicHeight={false}
-            infiniteLoop={true}
-            >
+            infiniteLoop={true}>
                 <div>
+                    <video className='videoTag' autoPlay loop muted><source src='../bmw.mp4' type='video/mp4' /></video>
+                    <p class="movie-text">Asiamall мультибрендовый авто салин</p>
+                    {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <img src={Car1} className='movie-text' />
+                    <img src={Car1} className='movie-text' />
+                    <img src={Car1} className='movie-text' />
+                    <img src={Car1} className='movie-text' />
+                    <img src={Car1} className='movie-text' /> */}
+                </div>
+                
+                {/* <div>
                     <img src={Car1} className='sliderImg' />
-                    {/* <p className="legend">Legend 1</p> */}
-                </div>
-                <div>
-                    <img src={Car2} className='sliderImg' />
-                    {/* <p className="legend">Legend 2</p> */}
-                </div>
-                <div>
-                    <img src={Car3}  className='sliderImg' />
-                    {/* <p className="legend">Legend 3</p> */}
-                </div>
+                    <p className="legend">Legend 1</p>
+                </div>*/}
             </Carousel>
         );
     }

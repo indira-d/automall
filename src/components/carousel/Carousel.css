@@ -1,3 +1,24 @@
 .sliderImg{
     height: 850px;
 }
+
+
+.videoTag{
+    width: 100%;
+    position: relative;
+    margin-top: -15%;
+    z-index: 0;
+}
+
+
+.movie-text {
+    position: absolute;
+    z-index: 50;
+    margin: 20px auto;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: -webkit-xxx-large;
+}
