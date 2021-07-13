@@ -1,11 +1,21 @@
 import React from 'react';
-import './ContactUs.css'
+import Footer from '../Footer/Footer';
+import Menu from '../Menu/Menu';
+import './ServiceSenter.css'
+import serviceBanner from '../../assets/Service-Banner-Revised.jpg'
 
-function ContactUs(props) {
-    return (
+function ServiceCenter(props) {
+	return (
+		
+			
+			<div className='service-center'>
 
-        <div className='CUwrapper'>  
-            <h1 style={{textAlign: 'center', padding: '30px'}}>НАПИШИТЕ НАМ</h1>
+			<Menu />
+
+			
+			<img src={serviceBanner} className='bannerImg'/>
+            
+			<h1 style={{textAlign: 'center', padding: '30px'}}>ЗАКАЖИТЕ СЕРВИСНОЕ ОБСЛУЖИВАНИЕ ВАШЕГО АВТОМОБИЛЯ</h1>
         <div className='ContactUsContainer'>
          
             <div className='wrapper'>
@@ -18,7 +28,7 @@ function ContactUs(props) {
                     </div>
                 </div>
                 <div className='form'>
-                        Электронная почта
+                    Электронная почта
                     <div className='formInput'>
                         <input placeholder='Email' type='text' className='inptForm' />
                     </div>
@@ -39,10 +49,11 @@ function ContactUs(props) {
             <div>
             <button className='contactUsBtn'>Отправить</button>
             </div>
-            
-        
-        </div>
-    );
+			
+			<Footer/>
+			
+		</div>
+	);
 }
 
-export default ContactUs;
+export default ServiceCenter;

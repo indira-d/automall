@@ -59,9 +59,9 @@ componentWillUnmount() {
            <Link to='/credit' style={{textDecoration: 'none'}}>
             <button className='menuItem'>Кредитование</button>
             </Link>
-          
-            <button className='menuItem'>Сервис центр</button>
-           
+            <Link to='/service' style={{textDecoration: 'none'}}>
+              <button className='menuItem'>Сервис центр</button>
+            </Link>
             <Link to='/contacts' style={{textDecoration: 'none'}}>
                 <button className='menuItem'>Контакты</button>
              </Link>

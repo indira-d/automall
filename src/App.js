@@ -8,6 +8,7 @@ import Automall from './components/Automall/Automall';
 import CarDetails from './components/CarDetails/CarDetails';
 import Contacts from './components/Contacts/Contacts';
 import CreditComponent from './components/CreditComponent/CreditComponent';
+import ServiceCenter from './components/ServiceCenter/ServiceCenter';
 
 // import Car1 from './assets/audi-rs720-1.jpg'
 // import Car2 from './assets/ls.jpg'
@@ -33,6 +34,7 @@ class App extends React.Component {
          <Route path='/contacts'  exact component= {Contacts}/>
          <Route path='/about'  exact component= {AboutCompany}/>
          <Route path='/credit'  exact component= {CreditComponent}/>
+         <Route path='/service'  exact component= {ServiceCenter}/>
        
         
      
