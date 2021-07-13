@@ -16,6 +16,9 @@ import ServiceCenter from './components/ServiceCenter/ServiceCenter';
 // // import Car4 from './assets/toyota.jpg'
 // import Car5 from './assets/P90306631-the-all-new-bmw-8-series-coupe-06-2018-2249px.jpg'
 // import Car6 from './assets/shevrolet.jpg'
+import Offer1 from './components/Offers/Offer1/Offer1';
+import Offer2 from './components/Offers/Offer2/Offer2';
+import Offer3 from './components/Offers/Offer3/Offer3';
 
 class App extends React.Component {
 
@@ -35,6 +38,9 @@ class App extends React.Component {
          <Route path='/about'  exact component= {AboutCompany}/>
          <Route path='/credit'  exact component= {CreditComponent}/>
          <Route path='/service'  exact component= {ServiceCenter}/>
+          <Route path='/offer1'  exact component= {Offer1}/>
+          <Route path='/offer2'  exact component= {Offer2}/>
+          <Route path='/offer3'  exact component= {Offer3}/>
        
         
      
