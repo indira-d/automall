@@ -15,7 +15,7 @@ class CarouselComponent extends Component {
             infiniteLoop={true}>
                 <div>
                     <video className='videoTag' autoPlay loop muted><source src='../bmw.mp4' type='video/mp4' /></video>
-                    <p class="movie-text">Asiamall мультибрендовый авто салин</p>
+                    <p class="movie-text">Automall мультибрендовый автосалoн</p>
                     {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <img src={Car1} className='movie-text' />
                     <img src={Car1} className='movie-text' />
