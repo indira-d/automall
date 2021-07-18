@@ -5,39 +5,39 @@ function ContactUs(props) {
     return (
 
         <div className='CUwrapper'>  
-            <h1 style={{textAlign: 'center', padding: '30px'}}>Contact Us</h1>
+            <h1 style={{textAlign: 'center', padding: '30px'}}>НАПИШИТЕ НАМ</h1>
         <div className='ContactUsContainer'>
          
             <div className='wrapper'>
                 <div className='form'>
                     <div>
-                    Name and Surname
+                    Фамилия Имя
                     </div>
                     <div className='formInput'>
                         <input placeholder='Name and Surname' type='text' className='inptForm' />
                     </div>
                 </div>
                 <div className='form'>
-                    Email
+                        Электронная почта
                     <div className='formInput'>
-                        <input placeholder='email' type='text' className='inptForm' />
+                        <input placeholder='Email' type='text' className='inptForm' />
                     </div>
                 </div>
                 <div className='form'>
-                    Phone number
+                    Телефон
                     <div className='formInput'>
-                        <input placeholder='phone Number' type='text' className='inptForm'/>
+                        <input placeholder='Phone number' type='text' className='inptForm'/>
                     </div>
                 </div>
             </div>
             </div>
-            <div className='taText'>Message text</div>
+            <div className='taText'>Напишите сообщение</div>
             <div className='cuTextarea'>
               <textarea placeholder='Text a message...' className='ta' />
               
             </div>
             <div>
-            <button className='contactUsBtn'>Send</button>
+            <button className='contactUsBtn'>Отправить</button>
             </div>
             
         
