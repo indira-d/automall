@@ -3,6 +3,10 @@ import offerImg1 from '../../assets/offerr1.jpg'
 import offerImg2 from '../../assets/offer2.jpg'
 import offerImg3 from '../../assets/offer3.jpg'
 import './Offers.css'
+import warrantyImg from '../../assets/toyota-warranty.jpg'
+import offer2Img from '../../assets/offer2Img.jpg'
+import oldCarsImg from '../../assets/oldCarsImg.jpg'
+import { Link } from 'react-router-dom';
 
 function Offers(props) {
     return (
@@ -19,14 +23,14 @@ function Offers(props) {
 
             <div className='offer'>
                     <div className='imgWrap'>
-                        <img className='offerImg' src={offerImg1}  />
+                        <img className='offerImg' src={warrantyImg}  />
                     </div>
                     <div className='offerDiscription'>
-                        <h3>Current offer</h3>
-                        Авто и спецтехника по выгодным условиям лизинга от банка
-                        <div>
-                            <button className='offerBtn'> See offer</button>
-                        </div>
+                        <h3>Страхование авто</h3>
+                        <p>Авто и спецтехника по выгодным условиям лизинга от банка</p>
+                        <Link to='/offer1' style={{textDecoration: 'none'}}>
+                            <button className='offerBtn' > See offer</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -34,27 +38,27 @@ function Offers(props) {
 
                 <div className='offer'>
                     <div className='imgWrap'>
-                         <img className='offerImg' src={offerImg2}  />
+                         <img className='offerImg' src={offer2Img}  />
                     </div>
                     <div className='offerDiscription'>
                         <h3>Current offer</h3>
                         Авто и спецтехника по выгодным условиям лизинга от банка
-                        <div>
+                        <Link to='/offer2' style={{textDecoration: 'none'}}>
                             <button className='offerBtn'> See offer</button>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className='offer'>
                     <div className='imgWrap'>
-                        <img className='offerImg' src={offerImg3}  />
+                        <img className='offerImg' src={oldCarsImg}  />
                     </div>
                     <div className='offerDiscription'>
                         <h3>Current offer</h3>
                         Авто и спецтехника по выгодным условиям лизинга от банка
-                        <div>
+                        <Link to='/offer3' style={{textDecoration: 'none'}}>
                             <button className='offerBtn'> See offer</button>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
