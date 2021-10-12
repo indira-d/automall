@@ -8,6 +8,7 @@
     position: relative;
     margin-top: -15%;
     z-index: 0;
+    filter: brightness(50%);
 }
 
 
@@ -21,4 +22,34 @@
     color: #fff;
     font-weight: 600;
     font-size: -webkit-xxx-large;
+}
+
+.video-wrapper{
+    background-color: blue;
+}
+
+
+.movie-slogan {
+    position: absolute;
+    z-index: 50;
+    margin: 20px auto;
+    top: 26%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: x-large;
+}
+
+
+.movie-contacts {
+    position: absolute;
+    z-index: 50;
+    margin: 20px auto;
+    top: 32%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    font-size: x-large;
 }

@@ -14,14 +14,14 @@ import CarDetails from '../CarDetails/CarDetails'
 
 export default class Catalogue extends Component {
     state={
-        showAudi: true,
-        showLexus: false,
+        showAudi: false,
+        showLexus: true,
         showKia: false,
         showBMV: false,
         showToyota: false,
         showShevrolet: false,
 
-        activeModel: 'Audi'
+        activeModel: 'Lexus'
     }
 
 
@@ -56,12 +56,12 @@ export default class Catalogue extends Component {
                 <h1 style={{textAlign: 'center'}}>Каталог</h1>
 
                 <div className='catalogueMenu'>
-                    <button className={this.state.showAudi  ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: true, showBMV: false, showLexus: false, showKia: false, showToyota: false, showShevrolet: false, activeModel: 'Audi'})}>Audi</button>
                     <button className={this.state.showLexus  ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: false, showBMV: false, showLexus: true, showKia: false, showToyota: false, showShevrolet: false, activeModel: 'Lexus'})}>Lexus</button>
                     <button className={this.state.showKia  ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: false, showBMV: false, showLexus: false, showKia: true, showToyota: false, showShevrolet: false, activeModel: 'KIA'})}>Kia</button>
                     <button className={this.state.showToyota ? 'active' : 'cItem'}onClick={() => this.setState({showAudi: false, showBMV: false, showLexus: false, showKia: false, showToyota: true, showShevrolet: false, activeModel: 'Toyota'})}>Toyota</button>
                     <button className={this.state.showBMV  ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: false, showBMV: true, showLexus: false, showKia: false, showToyota: false, showShevrolet: false, activeModel: 'BMV'})}>BMV</button>
                     <button className={this.state.showShevrolet ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: false, showBMV: false, showLexus: false, showKia: false, showToyota: false, showShevrolet: true, activeModel: 'Shevrolet'})}>Shevrolet</button>
+                    <button className={this.state.showAudi  ? 'active' : 'cItem'} onClick={() => this.setState({showAudi: true, showBMV: false, showLexus: false, showKia: false, showToyota: false, showShevrolet: false, activeModel: 'Audi'})}>Audi</button>                
                 </div>
 
                 <div className='carsGallery' >
@@ -77,6 +77,7 @@ export default class Catalogue extends Component {
                                 <div className='carText'>
                                     <h4>{car.model}</h4>
                                     <div className='carPrice' style={{textAlign: 'left', margin: '5px 5px 5px 0px'}}> От {car.price} сомов</div>
+                                    <div className='carPrice' style={{textAlign: 'left', margin: '2px 5px 5px 0px'}}> {car.slogan}</div>
                                     {/* <div className='carDescription'>год выпуска: {car.year}  г.в.</div>
                                     <div className='carDescription'> объем двигателя: {car.description}</div>  */}
                                 </div>

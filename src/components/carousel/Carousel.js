@@ -13,9 +13,12 @@ class CarouselComponent extends Component {
             <Carousel autoPlay={true} interval={3000} showThumbs={false}
             stopOnHover={false} transitionTime={0.5} dynamicHeight={false}
             infiniteLoop={true}>
-                <div>
+                <div class="video-wrapper">
                     <video className='videoTag' autoPlay loop muted><source src='../bmw.mp4' type='video/mp4' /></video>
                     <p class="movie-text">Automall мультибрендовый автосалoн</p>
+                    <p class="movie-slogan">В нашем салоне вы можете приобрести машину  вашей мечты</p>
+                    <p class="movie-contacts"><b>Контакты:</b> +996(777)222-444, +996(555)222-444 <br/>Пн-Вс круглосуточно</p>
+                    
                     {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <img src={Car1} className='movie-text' />
                     <img src={Car1} className='movie-text' />
