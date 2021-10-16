@@ -57,7 +57,7 @@
   background: linear-gradient(to right, #fff 50%, #333 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .menuModels {
