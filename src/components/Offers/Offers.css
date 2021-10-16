@@ -1,93 +1,85 @@
-.offersContainer{
-    display: flex;
-   justify-content: center;
-   background: white;
-   font-family: 'Montserrat', serif;
-   font-weight: 700;
-   height: 550px;
+.offersContainer {
+  display: flex;
+  justify-content: center;
+  background: white;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+  height: 550px;
 }
 
-.imgWrap{
-    width: 355px;
-    /* height: 250px;  */
-    overflow: hidden;
-    
+.imgWrap {
+  width: 355px;
+  /* height: 250px;  */
+  overflow: hidden;
+  object-fit: contain;
 }
 
-.offerImg{
-    width: 350px;
-    height: 220px;
-    
+.offerImg {
+  width: 350px;
+  height: 220px;
 }
 
- .imgWrap img{
-     transition: transform 1s, filter 2s ease-in-out;
-     transform: scale(1.2);
-     
-  }
- 
- .offer:hover img{
-   transform: scale(1);
-   
- }
-
-
-
-h3, h2{
-    text-align: center;
-    font-family: 'Montserrat', serif;
-    font-weight: 700;
-   
+.imgWrap img {
+  transition: transform 1s, filter 2s ease-in-out;
+  transform: scale(1.1);
 }
 
-.offerDiscription{
-  
-    padding: 20px;
-    margin: 5px;
-    font-family: 'Montserrat', serif;
-    font-weight: 700;
-   
+.offer:hover img {
+  transform: scale(1);
 }
 
-.offerBtn{
-    display: flex;
-    background: none;
-    border: 2px solid black;
-    padding: 10px;
-    width: 150px;
-    margin: 20px auto;
-    align-content: center;
-    font-weight: bold;
-    outline: none;
-    justify-content: center;
+h3,
+h2 {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
 }
 
-.offerBtn:hover{
-    background: rgba(0, 0, 0, 0.844);
-    color: white;
-    outline: none;
+.offerDiscription {
+  padding: 20px;
+  margin: 5px;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
 }
 
-.oWrapper{
-    background: white;
-    padding-top: 20px;
-    font-family: 'Montserrat', serif;
-    font-weight: 700;
-    
+.offerBtn {
+  display: flex;
+  background: none;
+  border: 2px solid black;
+  padding: 10px;
+  width: 150px;
+  margin: 20px auto;
+  align-content: center;
+  font-weight: bold;
+  outline: none;
+  justify-content: center;
 }
 
-.text{
-    width: 60%;
-   
-    align-content: center;
-
-    margin: 50px auto;
+.offerBtn:hover {
+  background: rgba(0, 0, 0, 0.844);
+  color: white;
+  outline: none;
 }
-.offer{
-    margin: 3px;
-    width: 320px;
-    height: 200px; 
-    /* overflow: hidden; */
-   
-    margin: 20px;
+
+.oWrapper {
+  background: white;
+  padding-top: 20px;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+
+.text {
+  width: 60%;
+
+  align-content: center;
+
+  margin: 50px auto;
+}
+.offer {
+  margin: 3px;
+  width: 320px;
+  height: 200px;
+  /* overflow: hidden; */
+
+  margin: 20px;
 }
