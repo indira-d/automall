@@ -33,7 +33,7 @@ class App extends React.Component {
         {/* <Route exact path='/' component={Automall} cars={this.state.carCatalogue} /> */}
         {/* <Route path='/carDetails' component={CarDetails} /> */}
          <Route path='/'                exact component={Automall} /> 
-         <Route path='/carDetails/:id'  exact component= {CarDetails}/>
+         <Route path='/carDetails/:id' exact component= {CarDetails}/>
          <Route path='/contacts'  exact component= {Contacts}/>
          <Route path='/about'  exact component= {AboutCompany}/>
          <Route path='/credit'  exact component= {CreditComponent}/>
@@ -43,9 +43,7 @@ class App extends React.Component {
           <Route path='/offer3'  exact component= {Offer3}/>
        
         
-     
-      
-
+    
      </Switch>
     </BrowserRouter>
   )

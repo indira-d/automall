@@ -3,8 +3,6 @@ import logo from '../../assets/Avtomoll_1_2x.png'
 import './Menu.css'
 import {  Link  } from 'react-router-dom'
 
-
-
 class Menu extends React.Component {
   constructor(props){
     super(props)
@@ -12,10 +10,10 @@ class Menu extends React.Component {
     this.handleClickOutside = this.handleClickOutside.bind(this);
 
      this.state={
-    showModels: false
+    showModels: false,
+    showMenu: false
   }
 }
-
 
   componentDidMount() {
     document.addEventListener('mouseover', this.handleClickOutside);
@@ -35,60 +33,74 @@ componentWillUnmount() {
 }
 
 
-
   render(){
-    return(
    
-      <div className='menuContainer' ref={this.wrapperRef}>
+    
+     return(
+       <div className='menuContainer' ref={this.wrapperRef}>
         <Link to='/'>
           <img  className='logoImg' src={logo}/>
         </Link>
 
-        <div className='menu'>
 
 
-           <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
-            <button className='menuItem'>Главная</button> 
-           </Link> 
-           <Link to='/carDetails/1' style={{textDecoration: 'none'}}>
-              <button className='menuItem'> Moдели</button>
-            </Link>
-            <Link to='/about' style={{textDecoration: 'none'}}>
-            <button className='menuItem'>О компании</button>
-            </Link  >
-           <Link to='/credit' style={{textDecoration: 'none'}}>
-            <button className='menuItem'>Кредитование</button>
-            </Link>
-            <Link to='/service' style={{textDecoration: 'none'}}>
-              <button className='menuItem'>Сервис центр</button>
-            </Link>
-            <Link to='/contacts' style={{textDecoration: 'none'}}>
-                <button className='menuItem'>Контакты</button>
-             </Link>
-        </div>
+ { window.innerWidth > 850
+         ? <div className='menu'>
+            <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
+              <button className='menuItem'>Главная</button> 
+            </Link> 
+            <Link to='/carDetails/1' style={{textDecoration: 'none'}}>
+                <button className='menuItem'> Moдели</button>
+              </Link>
+              <Link to='/about' style={{textDecoration: 'none'}}>
+              <button className='menuItem'>О компании</button>
+              </Link  >
+            <Link to='/credit' style={{textDecoration: 'none'}}>
+              <button className='menuItem'>Кредитование</button>
+              </Link>
+              <Link to='/service' style={{textDecoration: 'none'}}>
+                <button className='menuItem'>Сервис центр</button>
+              </Link>
+              <Link to='/contacts' style={{textDecoration: 'none'}}>
+                  <button className='menuItem'>Контакты</button>
+              </Link>
+          </div>
+          : <div><button className='mobileMenu' onClick={() => this.setState({showMenu: !this.state.showMenu})}>
+                <div className='mobile_menu'></div>
+                <div className='mobile_menu'></div>
+                <div className='mobile_menu'></div>
+
+          </button>
+          <div className={this.state.showMenu ? 'showMenu' : 'hideMenu'}>
+        <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
+              <button className='menuItem'>Главная</button> 
+            </Link> 
+            <Link to='/carDetails/1' style={{textDecoration: 'none'}}>
+                <button className='menuItem'> Moдели</button>
+              </Link>
+              <Link to='/about' style={{textDecoration: 'none'}}>
+              <button className='menuItem'>О компании</button>
+              </Link  >
+            <Link to='/credit' style={{textDecoration: 'none'}}>
+              <button className='menuItem'>Кредитование</button>
+              </Link>
+              <Link to='/service' style={{textDecoration: 'none'}}>
+                <button className='menuItem'>Сервис центр</button>
+              </Link>
+              <Link to='/contacts' style={{textDecoration: 'none'}}>
+                  <button className='menuItem'>Контакты</button>
+              </Link>
+          </div>
           
-          <div className='modelsBrand'>
-            
-        
-            {/* <h3 className='menuHeader'> Audi</h3>  */}
-               {/* { this.props.cars.map(function(car) {
-                return <Link to={'/carDetails/' + car.id} className='modelItem' key={car.id}>
-                            <img  src={car.img} className='modelImg'  />
-                            <div className='modelDescription'>
-                               {car.model}
-                            </div>
-                          </Link>
-                        })
-                   
-                   }   
-                  */}
-              </div> 
-         </div>
-
-
-    )
-  }
+          
+          </div>
+ }
+        </div>
+        )
+      
   
+            
+     } 
 }
 
 export default Menu

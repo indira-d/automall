@@ -7,6 +7,7 @@ import ExtensionIcon from '@material-ui/icons/Extension';
 import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 
 function Features(props) {
+    
     return (
         <div className='featuresContainer'>
             <div  className='featuresItem'>
