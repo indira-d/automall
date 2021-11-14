@@ -1,12 +1,8 @@
 
 import React, { Component } from 'react'
-import CarD1 from '../../assets/13662.jpg'
-import CarD2  from '../../assets/2022-kia-k8-sedan.jpg'
-import CarD3 from '../../assets/kia.jpg'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios'
-
 import Menu from '../Menu/Menu';
 import './CarDetails.css'
 import Footer from '../Footer/Footer';
@@ -34,23 +30,28 @@ export default class CarDetails extends Component {
             console.log(err)
         })
     }
+
+    activeBrand(e){
+       console.log('activeBrand', e)
+    }
     
 
     render() {
 
         let params = this.props.match.params.id
-        let carInfo = this.state.carCatalogue.filter(function(car){
-            return car.id === Number(params)
-        })
+    
 
       return (
             <div className='carDetails'>
                 <Menu />
                 <div style={{display: 'flex'}}>
-                    <Sidebar cars={this.state.carCatalogue}/>
+                    <Sidebar cars={this.state.carCatalogue}
+                            params={params}
+                            activeBrand={this.activeBrand.bind(this)}
+                    />
                     <div className='carDetailsContainer'>
                         {
-                            this.state.carCatalogue.filter(el => el.id == params)
+                            this.state.carCatalogue.filter(el => el.id === Number(params))
                             .map(function(it){
                                 return(
                                 <div>

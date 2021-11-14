@@ -1,49 +1,56 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Sidebar.css'
 import {Link} from 'react-router-dom'
 
-class Sidebar extends React.Component{
+const Sidebar = (props) => {
 
-    state={
-        showModel: 'LEXUS',
-        BMW:[],
-        LEXUS:[],
-        TOYOTA:[],
-        KIA:[],
-        CHEVROLET:[]
-    }
+    const [model, showModel] =  useState('LEXUS')
+    const [id, setId] = useState()
 
-    render(){
-        let carModel = this.props.cars.filter(el => el.brand == this.state.showModel)
-        console.log(carModel)
+    useEffect(() => {
+      setId(props.cars.filter(el => el.brand === model))
+      props.activeBrand(model)
+    }, [props.cars, model])
+
+    console.log(model, id)
+    console.log('params', props.params)
+    console.log('props', props.cars)
+        
 
     return (
         <div className='Sidebar'>
             <div className="sidebarItem">
                 <div className='sidebarBtn'>
-            
-                   <Link to='/carDetails/1'><button className={this.state.showModel == 'Audi' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'Audi'})} >Audi</button> </Link>
-                   <Link to='/carDetails/9'><button className={this.state.showModel == 'LEXUS' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'Lexus'})}>Lexus</button></Link>
-                   <Link to='/carDetails/17'><button className={this.state.showModel == 'KIA' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'KIA'})}>KIA</button></Link>
-                   <Link to='/carDetails/25'><button className={this.state.showModel == 'TOYOTA' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'Toyota'})}>Toyota</button></Link>
-                   <Link to='/carDetails/31'><button className={this.state.showModel == 'BMV' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'BMV'})}>BMV</button></Link>
-                   <Link to='/carDetails/39'><button className={this.state.showModel == 'Shevrolet' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'Shevrolet'})}>Shevrolet</button></Link>
-                   <Link to='/carDetails/47'><button className={this.state.showModel == 'oldCars' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'oldCars'})}>Aвто с пробегом</button></Link>
+                
+                   <Link to= {'/carDetails/' + props.params} ><button className={model == 'Audi' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('Audi')} >Audi</button> </Link>
+                   <Link to= {'/carDetails/' + props.params}><button className={model == 'LEXUS' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('LEXUS')}>Lexus</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'KIA' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('KIA')}>KIA</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'TOYOTA' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('TOYOTA')}>Toyota</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'BMV' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('BMW')}>BMV</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'Shevrolet' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('CHEVROLET')}>Shevrolet</button></Link>
+                   {/* <Link to='/carDetails/:id'><button className={model == 'oldCars' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'oldCars'})}>Aвто с пробегом</button></Link> */}
                 </div>
                 <div className='modelsWrapper'>
-                <h3 style={{textAlign: 'center', width: '200px'}}>Models</h3>
-                
-                {/* {carModel.map(car => {
-                    return <Link to={'/carDetails/' + car.id} key={car.id} style={{textDecoration: 'none'}} className='carsLink'>{car.title}</Link>
-                })
-             } */}
+                    <h3 style={{textAlign: 'center', width: '200px'}}>Models</h3>
+                    
+                    {/* {props.cars.map(car => {
+                        return <Link to={'/carDetails/' + car.id} key={car.id} style={{textDecoration: 'none'}} className='carsLink'>{car.title}</Link>
+                    })
+                } */}
 
-             
-        </div>
+                {
+                    props.cars.filter(car => car.brand === model).map(it => 
+                    <Link to={'/carDetails/' + it.id} key={it.id} style={{textDecoration: 'none'}} className='carsLink'>
+                        {it.title}
+                    </Link>
+                    )
+                }
+                </div>
 
             </div>
         </div>
+        
     );
 }
-}
+
 export default Sidebar;

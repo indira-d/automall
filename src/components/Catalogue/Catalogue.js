@@ -40,7 +40,7 @@ export default class Catalogue extends Component {
 
                 <div className='carsGallery' >
                     {
-                        this.props.cars.filter(el => el.brand == this.state.activeModel)
+                        this.props.cars.filter(el => el.brand === this.state.activeModel)
                         .map(function(car, index){
                             return  <Link to={'/carDetails/' + car.id} className='carLink' style={{ textDecoration: 'none' }}  >
                             <div className='catalogueItem'> 
