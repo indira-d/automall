@@ -21,7 +21,7 @@ export default class CarDetails extends Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0);
-        axios.get('http://localhost:8000/api/cars/').then(res => {
+        axios.get('http://159.223.67.241/api/cars/').then(res => {
            
             this.setState({carCatalogue: res.data})
             console.log('resdata', res.data)

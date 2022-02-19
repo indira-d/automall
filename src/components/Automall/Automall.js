@@ -23,7 +23,7 @@ class Automall extends React.Component {
 
 
     componentDidMount(){
-        axios.get('http://localhost:8000/api/cars/')
+        axios.get('http://159.223.67.241/api/cars/')
     
          .then(res => {
         const carCatalogue = res.data;
