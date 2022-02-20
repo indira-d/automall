@@ -22,7 +22,6 @@ export default class CarDetails extends Component {
     componentDidMount() {
         window.scrollTo(0, 0);
         axios.get('http://159.223.67.241/api/cars/').then(res => {
-           
             this.setState({carCatalogue: res.data})
             console.log('resdata', res.data)
             this.setState({carCatalogue: res.data})
@@ -205,8 +204,6 @@ export default class CarDetails extends Component {
             <Credit />
             <Footer />
         </div>
-        
-      
         )
     }
 }

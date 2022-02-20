@@ -21,29 +21,21 @@ class Automall extends React.Component {
      }
     }
 
-
     componentDidMount(){
         axios.get('http://159.223.67.241/api/cars/')
-    
          .then(res => {
         const carCatalogue = res.data;
-
         this.setState({ carCatalogue});
       })
-      .catch(err => console.log('err',err)) 
-      
+      .catch(err => console.log('err',err))
     }
 
     scrollTo () {
        window.scrollTo({ behavior: 'smooth', top: 3280})
     }
 
-    
-
     render(){
         let oldCars = this.state.carCatalogue.filter(elem => elem.Brand == 'oldCars')
-
-        
         return (
             <div>
                 <Menu 

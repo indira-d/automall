@@ -22,12 +22,14 @@ const Sidebar = (props) => {
             <div className="sidebarItem">
                 <div className='sidebarBtn'>
                 
-                   <Link to= {'/carDetails/' + props.params} ><button className={model == 'Audi' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('Audi')} >Audi</button> </Link>
-                   <Link to= {'/carDetails/' + props.params}><button className={model == 'LEXUS' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('LEXUS')}>Lexus</button></Link>
+                   <Link to={'/carDetails/' + props.params} ><button className={model == 'Isuzu' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('Isuzu')} >Isuzu</button> </Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'LEXUS' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('LEXUS')}>Lexus</button></Link>
                    <Link to={'/carDetails/' + props.params}><button className={model == 'KIA' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('KIA')}>KIA</button></Link>
                    <Link to={'/carDetails/' + props.params}><button className={model == 'TOYOTA' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('TOYOTA')}>Toyota</button></Link>
                    <Link to={'/carDetails/' + props.params}><button className={model == 'BMV' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('BMW')}>BMV</button></Link>
-                   <Link to={'/carDetails/' + props.params}><button className={model == 'Shevrolet' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('CHEVROLET')}>Shevrolet</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'Chevrolet' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('CHEVROLET')}>Chevrolet</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'Jac' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('JAC')}>Jac</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'Gas' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('GAS')}>Gas</button></Link>
                    {/* <Link to='/carDetails/:id'><button className={model == 'oldCars' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'oldCars'})}>Aвто с пробегом</button></Link> */}
                 </div>
                 <div className='modelsWrapper'>

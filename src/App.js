@@ -24,8 +24,6 @@ class App extends React.Component {
 
   render(){
   return(
-  
-   
     <BrowserRouter 
     // onUpdate={() => window.scrollTo(0, 0)}
     >
@@ -41,9 +39,6 @@ class App extends React.Component {
           <Route path='/offer1'  exact component= {Offer1}/>
           <Route path='/offer2'  exact component= {Offer2}/>
           <Route path='/offer3'  exact component= {Offer3}/>
-       
-        
-    
      </Switch>
     </BrowserRouter>
   )
