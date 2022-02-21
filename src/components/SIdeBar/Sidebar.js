@@ -29,7 +29,7 @@ const Sidebar = (props) => {
                    <Link to={'/carDetails/' + props.params}><button className={model == 'BMV' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('BMW')}>BMV</button></Link>
                    <Link to={'/carDetails/' + props.params}><button className={model == 'Chevrolet' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('CHEVROLET')}>Chevrolet</button></Link>
                    <Link to={'/carDetails/' + props.params}><button className={model == 'Jac' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('JAC')}>Jac</button></Link>
-                   <Link to={'/carDetails/' + props.params}><button className={model == 'Gas' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('GAS')}>Gas</button></Link>
+                   <Link to={'/carDetails/' + props.params}><button className={model == 'Gas' ? 'activeBtn' : 'sideBtn'} onClick={() => showModel('GAS')}>Газ</button></Link>
                    {/* <Link to='/carDetails/:id'><button className={model == 'oldCars' ? 'activeBtn' : 'sideBtn'} onClick={() => this.setState({showModel: 'oldCars'})}>Aвто с пробегом</button></Link> */}
                 </div>
                 <div className='modelsWrapper'>
