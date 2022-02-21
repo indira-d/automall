@@ -36,7 +36,7 @@ function AboutCompany(props) {
                 <div style={{margin: '20px 10px '}}>
                 Мы предлагаем не просто сервис и ремонт ваших автомобилей, мы предлагаем нашим Клиентам систему 3S: Sales, Service и Spares.
                 </div>
-                <div style={{display: 'flex'}}>
+                <div className='s-wrapper' style={{display: 'flex'}}>
                 <div  className='s' >
                     <img src={saveMany}  className='aboutImg'/>
                     <div>

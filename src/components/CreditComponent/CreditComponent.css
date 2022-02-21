@@ -16,7 +16,8 @@
 }
 
 .halykImg{
-    width: 600px;
+    width: 100%;
+    object-fit: cover;
 }
 .halykWrapper {
     padding: 20px;
@@ -26,7 +27,15 @@
     font-size: 18px;
     line-height: 1.6;
     font-family: 'Montserrat';
+    flex-wrap: wrap;
+   
   }
+
+  .halyk{
+      width: 100%;
+      margin: 20px;
+  }
+
 
 
 

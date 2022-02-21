@@ -65,7 +65,7 @@ componentWillUnmount() {
                   <button className='menuItem'>Контакты</button>
               </Link>
           </div>
-          : <div><button className='mobileMenu' onClick={() => this.setState({showMenu: !this.state.showMenu})}>
+          : <div className='wrapper'><button className='mobileMenu' onClick={() => this.setState({showMenu: !this.state.showMenu})}>
                 <div className='mobile_menu'></div>
                 <div className='mobile_menu'></div>
                 <div className='mobile_menu'></div>

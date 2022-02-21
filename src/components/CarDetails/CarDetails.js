@@ -42,6 +42,7 @@ export default class CarDetails extends Component {
 
       return (
             <div className='carDetails'>
+               
                 <Menu />
                 <div style={{display: 'flex'}}>
                     <Sidebar cars={this.state.carCatalogue}
@@ -53,7 +54,7 @@ export default class CarDetails extends Component {
                             this.state.carCatalogue.filter(el => el.id === Number(params))
                             .map(function(it){
                                 return(
-                                <div>
+                                <div className='mobile-wrapper'>
                                     <div style={{display: 'flex'}}>
                                         <div className='carWrapper'> 
                                             <Carousel autoPlay={false} stopOnHover={true} >  
@@ -106,6 +107,7 @@ export default class CarDetails extends Component {
                                                     </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
 
 

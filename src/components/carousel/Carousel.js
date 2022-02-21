@@ -16,8 +16,11 @@ class CarouselComponent extends Component {
                 <div class="video-wrapper">
                     <video className='videoTag' autoPlay loop muted><source src='../bmw.mp4' type='video/mp4' /></video>
                     <p class="movie-text">Automall мультибрендовый автосалoн</p>
-                    <p class="movie-slogan">В нашем салоне вы можете приобрести машину  вашей мечты</p>
-                    <p class="movie-contacts"><b>Контакты:</b> +996(777)222-444, +996(555)222-444 <br/>Пн-Вс круглосуточно</p>
+                    <div>
+                            <p class="movie-slogan">В нашем салоне вы можете приобрести машину  вашей мечты</p>
+                        <p class="movie-contacts"><b>Контакты:</b> +996(777)222-444, +996(555)222-444 <br/>Пн-Вс круглосуточно</p>
+                    </div>
+                   
                     
                     {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <img src={Car1} className='movie-text' />

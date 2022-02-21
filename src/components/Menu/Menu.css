@@ -181,8 +181,14 @@
 }
 
 .showMenu{
+  border-top: 1px solid silver;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 91vh;
   background: white;
+  width: 100%;
+   position: fixed;
+   top: 9vh;
+   left: 0;
+   z-index: 100;
 }

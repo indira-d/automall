@@ -1,7 +1,7 @@
 import React from 'react';
-import offerImg1 from '../../assets/offerr1.jpg'
-import offerImg2 from '../../assets/offer2.jpg'
-import offerImg3 from '../../assets/offer3.jpg'
+// import offerImg1 from '../../assets/offerr1.jpg'
+// import offerImg2 from '../../assets/offer2.jpg'
+// import offerImg3 from '../../assets/offer3.jpg'
 import './Offers.css'
 import warrantyImg from '../../assets/toyota-warranty.jpg'
 import offer2Img from '../../assets/offer2Img.jpg'

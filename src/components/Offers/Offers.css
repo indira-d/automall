@@ -4,7 +4,9 @@
   background: white;
   font-family: "Montserrat", serif;
   font-weight: 700;
-  height: 550px;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imgWrap {
@@ -70,16 +72,13 @@ h2 {
 
 .text {
   width: 60%;
-
   align-content: center;
-
   margin: 50px auto;
 }
 .offer {
   margin: 3px;
-  width: 320px;
-  height: 200px;
-  /* overflow: hidden; */
-
+  width: 355px;
+  height: 100%;
   margin: 20px;
+  border: 1px solid silver;
 }

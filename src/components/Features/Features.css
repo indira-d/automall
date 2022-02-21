@@ -1,5 +1,5 @@
 .featuresContainer{
-    height: 230px;
+    height: 100%;
     display: flex;
     /* background: linear-gradient(rgb(29, 29, 29), rgba(63, 63, 63, 0.927)); */
     padding: 50px 30px;
@@ -12,6 +12,8 @@
      font-family: 'Montserrat', serif;
     font-weight: 700;
     background: rgba(2,0,36,0.9) 23%;
+    flex-wrap: wrap;
+    justify-content: center;
     
    
 }
@@ -31,6 +33,7 @@
 }
 
 .featuresItem{
-    width: 25%;
+    width: 220px;
+    height: 100%;
 
 }

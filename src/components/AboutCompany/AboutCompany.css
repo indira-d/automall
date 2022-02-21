@@ -54,9 +54,17 @@
     margin: 10px  15px;
 }
 
+.s-wrapper{
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 .s{
     display: flex;
     flex-direction: column;
-    width: 33%;
+    height: 100%;
+    width: 250px;
     align-items: center;
 }
