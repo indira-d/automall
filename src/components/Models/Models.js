@@ -1,25 +1,22 @@
-
 import React, { Component } from 'react'
+import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import axios from 'axios'
 import Menu from '../Menu/Menu';
-import './CarDetails.css'
+import './Models.css'
 import Footer from '../Footer/Footer';
-import Catalogue from '../Catalogue/Catalogue';
 import Sidebar from '../SIdeBar/Sidebar';
 import Credit from '../Credit/Credit';
 
-
-export default class CarDetails extends Component {
-    constructor(props){
+export default class Models extends Component {
+	  constructor(props){
         super(props)
 
-    this.state={
-        carCatalogue: []
-     }
-
+		this.state={
+			carCatalogue: []
+		}
     }
+
     componentDidMount() {
         window.scrollTo(0, 0);
         axios.get('http://159.223.67.241/api/cars/').then(res => {
@@ -31,33 +28,35 @@ export default class CarDetails extends Component {
         })
     }
 
+
     activeBrand(e){
        console.log('activeBrand', e)
+       console.log('carCatalog', this.state.carCatalogue)
+       console.log('propsdd', this.props)
+       console.log('params', this.props.match.params.id)
     }
     
+  render() {
+	  let params = this.props.match.params.id
 
-    render() {
-
-        let params = this.props.match.params.id
     
 
-      return (
-            <div className='carDetails'>
-               
-                    <Menu />
-                    <div style={{display: 'flex'}}>
-                        <Sidebar cars={this.state.carCatalogue}
-                                params={params}
-                                activeBrand={this.activeBrand.bind(this)}
-                    />
-                    <div className='carDetailsContainer'>
+	return (
+	  <div className='detailsWrapper'>
+            <Menu />
+            <div className='block'>
+            <Sidebar cars={this.state.carCatalogue}
+                                    params={params}
+                                    activeBrand={this.activeBrand.bind(this)}
+                        />
+            
+				 <div className='modelsContainer'>
                         {
                             this.state.carCatalogue.filter(el => el.id === Number(params))
                             .map(function(it){
                                 return(
-                                <div className='mobile-wrapper'>
                                     <div style={{display: 'flex'}}>
-                                        <div className='carWrapper'> 
+                                        <div className='Carousel'> 
                                             <Carousel autoPlay={false} stopOnHover={true} >  
                                                     <div>
                                                         <img src={it.image_one} />
@@ -73,9 +72,7 @@ export default class CarDetails extends Component {
                                                     </div> 
                                             </Carousel>
                                         </div>
-
-
-                                        <div className='carDiscription'>
+                                        <div className='carDescription'>
                                             <div>
                                                    <h1 style={{textAlign: 'center'}}>{it.title}</h1>
                                                     <h2 style={{textAlign: 'center'}}> {it.price}</h2>
@@ -110,12 +107,9 @@ export default class CarDetails extends Component {
                                                     </div>
                                             </div>
                                         </div>
-                                        
-                                    </div>
+                                         
 
-
-
-                                    <div className='carInfoWrapper'>
+                                         <div className='carInfoWrapper'>
                                         <h2>Общие характеристики</h2>
                                         <div className='carInfo'>
                                             <div className='carInfoItem'>
@@ -200,15 +194,23 @@ export default class CarDetails extends Component {
                                             </div>
                                         </div> 
                                     </div>
-                                    </div>
-                                )
-                            })
-                        }  
-                </div>
-            </div>
-            <Credit />
-            <Footer />
-        </div>
-        )
-    }
+
+
+                                        </div>
+								    )})
+                                }
+	                   </div>
+                       
+                       
+
+	            </div>
+
+                <div className='creditWrapper'>
+                           <Credit />
+                       </div>
+                       <Footer />
+                        
+	    </div>
+	)
+  }
 }

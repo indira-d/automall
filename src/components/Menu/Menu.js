@@ -35,21 +35,18 @@ componentWillUnmount() {
 
   render(){
    
-    
      return(
        <div className='menuContainer' ref={this.wrapperRef}>
         <Link to='/'>
           <img  className='logoImg' src={logo}/>
         </Link>
 
-
-
  { window.innerWidth > 850
          ? <div className='menu'>
             <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
               <button className='menuItem'>Главная</button> 
             </Link> 
-            <Link to='/carDetails/1' style={{textDecoration: 'none'}}>
+            <Link to='/models/1' style={{textDecoration: 'none'}}>
                 <button className='menuItem'> Moдели</button>
               </Link>
               <Link to='/about' style={{textDecoration: 'none'}}>
@@ -75,7 +72,7 @@ componentWillUnmount() {
         <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
               <button className='menuItem'>Главная</button> 
             </Link> 
-            <Link to='/carDetails/1' style={{textDecoration: 'none'}}>
+            <Link to='/models/1' style={{textDecoration: 'none'}}>
                 <button className='menuItem'> Moдели</button>
               </Link>
               <Link to='/about' style={{textDecoration: 'none'}}>

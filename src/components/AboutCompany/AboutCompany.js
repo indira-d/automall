@@ -5,9 +5,7 @@ import './AboutCompany.css'
 import Footer from '../Footer/Footer';
 import saveMany  from '../../assets/SaveMoneyforCar-1457649384-1.jpg'
 import service from '../../assets/service.jpg'
-import warranty from '../../assets/GettyImages-861063644-copy.jpg'
 import stares from '../../assets/шины.jpg'
-import BuildIcon from '@material-ui/icons/Build';
 
 function AboutCompany(props) {
     return (
@@ -24,9 +22,6 @@ function AboutCompany(props) {
       
                 <h2 style={{margin: '50px'}}>Миссия компании:</h2>
                 <div >
-                {/* <div>
-                    <img src={warranty} className='aboutImg'/>
-                </div> */}
                 <div>
                 Мы передовая команда профессионалов, нацеленная на удовлетворение потребностей наших друзей и партнеров, качественными автомобилями и сервисом, достойных их.
                 </div>
