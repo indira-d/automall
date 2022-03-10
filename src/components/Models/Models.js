@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect} from 'react'
 import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -8,53 +8,58 @@ import Footer from '../Footer/Footer';
 import Sidebar from '../SIdeBar/Sidebar';
 import Credit from '../Credit/Credit';
 
-export default class Models extends Component {
-	  constructor(props){
-        super(props)
+export const Models = (props) => {
 
-		this.state={
-			carCatalogue: []
-		}
-    }
+     const [carCatalogue, setCarCatalogue] = useState([])
+     const [activeBrand, setActiveBrand] = useState('')
+     let ls = JSON.parse(window.localStorage.getItem('carlist'))
+     const [defaultModel, setDefaultModel] = useState()
+     let params = Number(props.match.params.id)
 
-    componentDidMount() {
+    useEffect(() => {
         window.scrollTo(0, 0);
-        axios.get('http://159.223.67.241/api/cars/').then(res => {
-            this.setState({carCatalogue: res.data})
-            console.log('resdata', res.data)
-            this.setState({carCatalogue: res.data})
+        axios.get('http://159.223.67.241/api/cars/').then(res => { 
+            window.localStorage.setItem('carlist', JSON.stringify(res.data))
+            const initialModel = res.data.filter(el => el.id === Number(props.match.params.id))[0].brand  
+            setDefaultModel(initialModel)
         }).catch(err => {
             console.log(err)
         })
+    }, [])
+
+
+   const activeBrandChangeHanler = (e) =>{
+           setActiveBrand(e)
     }
 
+     useEffect(() => {
+         
+           let selectedModel = ls.filter(x => x.id === Number(props.match.params.id))
+           setCarCatalogue(selectedModel) 
 
-    activeBrand(e){
-       console.log('activeBrand', e)
-       console.log('carCatalog', this.state.carCatalogue)
-       console.log('propsdd', this.props)
-       console.log('params', this.props.match.params.id)
-    }
-    
-  render() {
-	  let params = this.props.match.params.id
+    }, [props.match.params.id, defaultModel])
 
-    
+
+      useEffect(() => {
+        let lsdata = ls.filter(x => x.brand === activeBrand)[0]
+        if(lsdata){
+             setCarCatalogue([lsdata])
+        }
+    }, [activeBrand])
 
 	return (
 	  <div className='detailsWrapper'>
             <Menu />
             <div className='block'>
-            <Sidebar cars={this.state.carCatalogue}
-                                    params={params}
-                                    activeBrand={this.activeBrand.bind(this)}
+            <Sidebar cars={ls}
+                    params={params}
+                    activeBrand={activeBrandChangeHanler}
                         />
             
 				 <div className='modelsContainer'>
                         {
-                            this.state.carCatalogue.filter(el => el.id === Number(params))
-                            .map(function(it){
-                                return(
+                      
+                            carCatalogue.map(it => (
                                     <div style={{display: 'flex'}}>
                                         <div className='Carousel'> 
                                             <Carousel autoPlay={false} stopOnHover={true} >  
@@ -197,12 +202,11 @@ export default class Models extends Component {
 
 
                                         </div>
-								    )})
-                                }
+								    )
+                                )
+                            }
 	                   </div>
                        
-                       
-
 	            </div>
 
                 <div className='creditWrapper'>
@@ -211,6 +215,8 @@ export default class Models extends Component {
                        <Footer />
                         
 	    </div>
-	)
-  }
-}
+ 	)
+
+                        }
+   
+

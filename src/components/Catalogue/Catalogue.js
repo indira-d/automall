@@ -9,7 +9,7 @@ export default class Catalogue extends Component {
         showIsuzu: false,
         showLexus: true,
         showKia: false,
-        showBMV: false,
+        showBMW: false,
         showToyota: false,
         showChevrolet: false,
         showGas: false,
@@ -26,11 +26,11 @@ export default class Catalogue extends Component {
                     <button className={this.state.showLexus  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: true, showKIA: false, showToyota: false, showChevrolet: false, showGas: false, showJac: false, activeModel: 'LEXUS'})}>Lexus</button>
                     <button className={this.state.showKIA  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: true, showToyota: false, showChevrolet: false, showGas: false,showJac: false, activeModel: 'KIA'})}>Kia</button>
                     <button className={this.state.showToyota ? 'active' : 'cItem'}onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: true, showChevrolet: false,showGas: false, showJac: false, activeModel: 'TOYOTA'})}>Toyota</button>
-                    <button className={this.state.showBMV  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: true, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false, showGas: false, showJac: false, activeModel: 'BMW'})}>BMW</button>
-                    <button className={this.state.showChevrolet ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: true,showGas: false, showJac: false, activeModel: 'СHEVROLET'})}>Shevrolet</button>
-                    <button className={this.state.showIsuzu  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: true, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false, showGas: false,showJac: false,  activeModel: 'Isuzu'})}>Isuzu</button>
-                    <button className={this.state.showJac  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false,showGas: false, showJac: true, activeModel: 'Jac'})}>Jac</button>
-                    <button className={this.state.showGas  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false,showJac: false, showGas: true, activeModel: 'Gas'})}>Газ</button>
+                    <button className={this.state.showBMW  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: true, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false, showGas: false, showJac: false, activeModel: 'BMW'})}>BMW</button>
+                    <button className={this.state.showChevrolet ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: true, showGas: false, showJac: false, activeModel: 'CHEVROLET'})}>Chevrolet</button>
+                    <button className={this.state.showIsuzu  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: true, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false, showGas: false,showJac: false,  activeModel: 'ISUZU'})}>Isuzu</button>
+                    <button className={this.state.showJac  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false,  showGas: false, showJac: true, activeModel: 'JAC'})}>Jac</button>
+                    <button className={this.state.showGas  ? 'active' : 'cItem'} onClick={() => this.setState({showIsuzu: false, showBMW: false, showLexus: false, showKIA: false, showToyota: false, showChevrolet: false,  showGas: true, showJac: false,  activeModel: 'ГАЗ'})}>Газ</button>
                 </div>
 
                 <div className='carsGallery' >
