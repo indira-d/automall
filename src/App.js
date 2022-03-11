@@ -13,7 +13,8 @@ import ServiceCenter from './components/ServiceCenter/ServiceCenter';
 import Offer1 from './components/Offers/Offer1/Offer1';
 import Offer2 from './components/Offers/Offer2/Offer2';
 import Offer3 from './components/Offers/Offer3/Offer3';
-import Models from './components/Models/Models';
+import { Models } from './components/Models/Models';
+
 
 class App extends React.Component {
 
