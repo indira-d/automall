@@ -1,64 +1,55 @@
-.contactsInfo{
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-     justify-content: space-between;
-    margin-left: 50px;
-    width: 400px;
-
-  
+.contactsInfo {
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 50px;
+	width: 400px;
 }
 
-.contactsItem{
-    display: flex;
-    padding: 5px;
-   
-    
+.contactsItem {
+	display: flex;
+	padding: 5px;
 }
-.contactsItem div{
-    margin-right: 10px;
+.contactsItem div {
+	margin-right: 10px;
 }
 
-
-
-.workHours{
-    width: 400px;
+.workHours {
+	width: 400px;
 }
 
 /* .workHours div{
     margin: 5px;
 } */
 
-.text{
-   
-    display: flex;
-    font-size: 16px;
-    flex-wrap: wrap;
-    justify-content: center;
-   
+.text {
+	display: flex;
+	font-size: 16px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 @media screen and (min-width: 370px) and (max-width: 430px) {
-    .text {
-
-        display: flex;
-        font-size: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-
-    }
+	.text {
+		display: flex;
+		font-size: 12px;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+	}
 }
 
-@media screen and (max-width: 370px){
-    .text {
-
-        display: flex;
-        font-size: 11px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin: 0;
-
-    }
+@media screen and (max-width: 370px) {
+	.text {
+		display: flex;
+		font-size: 11px;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 92%;
+		margin: 0;
+		padding: 14px;
+		text-align: justify;
+		text-indent: 20px;
+	}
 }
