@@ -18,7 +18,7 @@ class CarouselComponent extends Component {
                     <p class="movie-text">Automall мультибрендовый автосалoн</p>
                     <div>
                             <p class="movie-slogan">В нашем салоне вы можете приобрести машину  вашей мечты</p>
-                        <p class="movie-contacts"><b>Контакты:</b> +996552-22-88-84; +996-551-11-88-83 <br/>Пн-Вс с 09.00 до 18.00</p>
+                        <p class="movie-contacts"><b>Контакты:</b> +996551-11-88-83 +996-771-11-88-83 +996-705-11-88-83 <br/>Пн-Вс с 09.00 до 18.00</p>
                     </div>
                    
                     

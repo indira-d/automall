@@ -25,7 +25,7 @@ function Footer(props) {
                 </div>
                 <div className='footerText'>
                     <h3>Телефон</h3>
-                    <div className='footerData'>0 (552) 22-88-84; 0 (551) 11-88-83</div>
+                    <div className='footerData'>0551-11-88-83 0771-11-88-83 0705-11-88-83</div>
 
                 </div>
             </div>  

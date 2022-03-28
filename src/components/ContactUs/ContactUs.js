@@ -20,7 +20,7 @@ function ContactUs(props) {
                 <div className='form'>
                         Электронная почта
                     <div className='formInput'>
-                        <input placeholder='Email' type='text' className='inptForm' />
+                        // <input placeholder='Email' type='text' className='inptForm' />
                     </div>
                 </div>
                 <div className='form'>

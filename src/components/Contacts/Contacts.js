@@ -54,7 +54,7 @@ function Contacts(props) {
                 <div className='contactsItem'>
                     <div><LocalPhoneIcon /></div>
                     <div style={{width: '100px'}}>Телефон:  </div>
-                    <div style={{width: '300px'}}> <strong>0 (552) 22-88-84; 0 (551) 11-88-83</strong></div>
+                    <div style={{width: '300px'}}> <strong>0(551) 11-88-83  0(771) 11-88-83  0(705) 11-88-83</strong></div>
 
                 </div>
                 <div className='contactsItem'>
