@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32f15b34.chunk.css",
+    "main.js": "/static/js/main.8dace4b1.chunk.js",
+    "main.js.map": "/static/js/main.8dace4b1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.585d4b97.js",
+    "runtime-main.js.map": "/static/js/runtime-main.585d4b97.js.map",
+    "static/css/2.6b560088.chunk.css": "/static/css/2.6b560088.chunk.css",
+    "static/js/2.28a70bc4.chunk.js": "/static/js/2.28a70bc4.chunk.js",
+    "static/js/2.28a70bc4.chunk.js.map": "/static/js/2.28a70bc4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.6b560088.chunk.css.map": "/static/css/2.6b560088.chunk.css.map",
+    "static/css/main.32f15b34.chunk.css.map": "/static/css/main.32f15b34.chunk.css.map",
+    "static/js/2.28a70bc4.chunk.js.LICENSE.txt": "/static/js/2.28a70bc4.chunk.js.LICENSE.txt",
+    "static/media/13662.e6c529d3.jpg": "/static/media/13662.e6c529d3.jpg",
+    "static/media/212.b3f3a993.jpg": "/static/media/212.b3f3a993.jpg",
+    "static/media/5cb0a31353c7113e012c92de.3131e3a2.jpeg": "/static/media/5cb0a31353c7113e012c92de.3131e3a2.jpeg",
+    "static/media/Avtomoll_1_2x.300f498d.png": "/static/media/Avtomoll_1_2x.300f498d.png",
+    "static/media/KBB-Best-Buys-Gear-Patrol-lead-full.e169de0f.jpg": "/static/media/KBB-Best-Buys-Gear-Patrol-lead-full.e169de0f.jpg",
+    "static/media/SaveMoneyforCar-1457649384-1.0d150b11.jpg": "/static/media/SaveMoneyforCar-1457649384-1.0d150b11.jpg",
+    "static/media/Service-Banner-Revised.3a286971.jpg": "/static/media/Service-Banner-Revised.3a286971.jpg",
+    "static/media/banner.0337e5ee.jpg": "/static/media/banner.0337e5ee.jpg",
+    "static/media/creditbanner.c2c1fd42.jpg": "/static/media/creditbanner.c2c1fd42.jpg",
+    "static/media/f317c15cc9b19e268569e591c2bc6fbe.6706130a.jpg": "/static/media/f317c15cc9b19e268569e591c2bc6fbe.6706130a.jpg",
+    "static/media/j-s-cool2.dc061879.jpg": "/static/media/j-s-cool2.dc061879.jpg",
+    "static/media/offer2Img.c8ffd2c3.jpg": "/static/media/offer2Img.c8ffd2c3.jpg",
+    "static/media/oldCarsImg.fc9d29d9.jpg": "/static/media/oldCarsImg.fc9d29d9.jpg",
+    "static/media/service.3a1c40ac.jpg": "/static/media/service.3a1c40ac.jpg",
+    "static/media/toyota-warranty.9e7a253f.jpg": "/static/media/toyota-warranty.9e7a253f.jpg",
+    "static/media/автокредит.b474a519.jpg": "/static/media/автокредит.b474a519.jpg",
+    "static/media/шины.f3b33fcb.jpg": "/static/media/шины.f3b33fcb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.585d4b97.js",
+    "static/css/2.6b560088.chunk.css",
+    "static/js/2.28a70bc4.chunk.js",
+    "static/css/main.32f15b34.chunk.css",
+    "static/js/main.8dace4b1.chunk.js"
+  ]
+}
