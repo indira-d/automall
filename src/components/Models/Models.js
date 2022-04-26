@@ -183,7 +183,7 @@ export const Models = (props) => {
                                             </div>
                                             <div className='carInfoItem'>
                                                 <div className='carInfoHeader'>
-                                            Объем багажника  466 л
+                                            Объем багажника
                                                 </div>
                                                 <div className='carInfoText'>
                                                {it.trunk_volume}

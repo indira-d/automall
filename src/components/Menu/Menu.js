@@ -46,7 +46,7 @@ componentWillUnmount() {
             <Link to='/' style={{textDecoration: 'none'}} className='linkMenuBtn' > 
               <button className='menuItem'>Главная</button> 
             </Link> 
-            <Link to='/models/1' style={{textDecoration: 'none'}}>
+            <Link to='/models/23' style={{textDecoration: 'none'}}>
                 <button className='menuItem'> Moдели</button>
               </Link>
               <Link to='/about' style={{textDecoration: 'none'}}>
